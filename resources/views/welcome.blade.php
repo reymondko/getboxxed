@@ -62,9 +62,23 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .logo {
+                background: #fff url("/img/logo.png") no-repeat scroll 0 0 / contain ;
+                height: 50px;
+                margin: 1em auto 3.5em;
+                width: 200px;
+            }
+            .bg-image {
+                    background: rgba(80, 80, 80, 0) url("/img/bk-image.jpg") no-repeat scroll 50% 50% / cover ;
+                    height: 100%;
+                    position: fixed;
+                    vertical-align: middle;
+                    width: 100%;
+                }
         </style>
     </head>
     <body>
+       <!--  <div class="bg-image"></div> -->
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -79,15 +93,19 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <div class="col-md-4 col-md-offset-10 col-sm-8 col-sm-offset-2 wrapper">
+                        <div class="row logo"></div>
+                    </div>
+            </div>
+                    
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
+                    <!-- <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a> -->
                 </div>
             </div>
         </div>
